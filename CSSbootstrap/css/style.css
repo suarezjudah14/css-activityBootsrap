@@ -1,0 +1,56 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.press-logo {
+  max-height: 30px;
+  max-width: 180px;
+  width: auto;
+}
+
+#title .img-fluid {
+  max-height: 600px;
+}
+
+@media (max-width: 991.98px) {
+  #title {
+    text-align: center;
+  }
+
+  #title .row {
+    padding-bottom: 2rem;
+  }
+
+  #title .img-fluid {
+    max-height: 500px;
+  }
+}
